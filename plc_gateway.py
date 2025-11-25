@@ -174,7 +174,7 @@ def start_http_server():
         def log_message(self, format, *args):
             pass  # Suppress HTTP logs
     
-    port = int(os.getenv('PORT', '8080'))
+    port = int(os.getenv('PORT', '10000'))  # Render uses port 10000
     server = HTTPServer(('0.0.0.0', port), HealthHandler)
     logger.info(f"Health check server running on port {port}")
     server.serve_forever()

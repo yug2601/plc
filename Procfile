@@ -1,1 +1,0 @@
-web: python plc_gateway.py
